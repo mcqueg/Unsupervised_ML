@@ -2,8 +2,10 @@
 
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
-def PCA(X, n):
+
+def PCA(data, n):
     '''
     Arguments:
         X -- df to be projected into a lower dimensional space.. shape (num examples, num features)
@@ -12,26 +14,30 @@ def PCA(X, n):
     Returns:
         X_pca -- the new reduced data from of shape (num examples, n)
     '''
+    X = data.copy()
     # step 1: normalize data
-    X_mean = X - np.mean(X, axis=0)
+    X = MinMaxScaler().fit_transform(X)
+    #X_mean = X - np.mean(X, axis=0)
 
     # step 2: calcualte covariance
-    cov_mat = np.cov(X_mean, rowvar=False) # False b/c observations are row-wise & features are column-wise
+    cov_mat = np.cov(X, rowvar=False) # False b/c observations are row-wise & features are column-wise
 
     # step 3: compute eigenvals and eigenvectors from covariance matrix
     eigen_vals, eigen_vecs = np.linalg.eigh(cov_mat)
 
     # step 4: sort eigenvals index w/ argsort() and flip() to get the largest egienvals on top
-    # apply the dorted indices to the eigenvectors in order to sort them in descending order
+    # apply the sorted indices to the eigenvectors in order to sort them in descending order
     eigenvecs_sorted = eigen_vecs[:, np.flip(np.argsort(eigen_vals))]
 
     # step 5: create the eigenvector subset by slicing from the first element to the specified nth element
     eigenvec_subset = eigenvecs_sorted[:,0:n]
 
     #step 6: project the dataset by using the dot product and eigenvector subset
-    X_pca = np.dot(X_mean, eigenvec_subset)
+    X_pca = np.dot(X, eigenvec_subset)
+
 
     return X_pca
+
 
 def LDA(data, labels, n):
     '''
@@ -44,8 +50,10 @@ def LDA(data, labels, n):
         X_lda -- the new reduced data from of shape (num examples, n)
     '''
     X = data.copy()
+    X = MinMaxScaler().fit_transform(X)
     # compute mean of data
     X_mean = X.mean()
+    X = pd.DataFrame(X)
     # initlize empty lists to hold the scatters for each class
     Sb = []
     Sw = []
