@@ -6,3 +6,4 @@ This repository holds the assignments for DATA55100: Unsupervised Machine Learni
 * [2. Clustering using the Basic Sequential Clustering Algorithm](https://nbviewer.org/github/mcqueg/Unsupervised_ML_Assignments/blob/main/BSCA.ipynb)
 * [3. Visual Assessment of Cluster Tendency using VAT/iVAT](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/VAT.ipynb)
 * [4. Clustering with the Fuzzy C-means Algorithm](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/FCM.ipynb)
+* [5. Assessing Cluster Validity](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/cluster_validity_indices.ipynb)
