@@ -1,0 +1,11 @@
+
+scratch/BSCA_1D_LDA.py
+scratch/LDA.md
+data/bsca/.DS_Store
+*.html
+__pycache__/dims_reduction.cpython-38.pyc
+.ipynb_checkpoints/BSCA-checkpoint.ipynb
+scratch/indicies.md
+scratch/som.md
+.vscode/settings.json
+data/.DS_Store
