@@ -8,4 +8,4 @@ This repository holds the assignments for DATA55100: Unsupervised Machine Learni
 * [4. Clustering with the Fuzzy C-means Algorithm](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/FCM.ipynb)
 * [5. Assessing Cluster Validity](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/cluster_validity_indices.ipynb)
 * [6. Self Organizing Maps](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/SOM.ipynb)
-* [7. Semi-Supervised Learning]()
+* [7. Semi-Supervised Learning](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/semi-supervised-ml.ipynb)
