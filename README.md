@@ -7,3 +7,5 @@ This repository holds the assignments for DATA55100: Unsupervised Machine Learni
 * [3. Visual Assessment of Cluster Tendency using VAT/iVAT](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/VAT.ipynb)
 * [4. Clustering with the Fuzzy C-means Algorithm](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/FCM.ipynb)
 * [5. Assessing Cluster Validity](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/cluster_validity_indices.ipynb)
+* [6. Self Organizing Maps](https://nbviewer.org/github/mcqueg/Unsupervised_ML/blob/main/SOM.ipynb)
+* [7. Semi-Supervised Learning]()
